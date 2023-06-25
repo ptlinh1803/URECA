@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!------------------------GENERAL INFORMATION---------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRYPTO-URECA</title>
+
+    <!-- link the css file with html file -->
+    <link rel="stylesheet" href="../static/css/design.css" />
+
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--insert this line for icon from front-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </head>
+
+  <body>
+    <!------------------------HEADER---------------------------->
+      <section class="search-header">
+        <!--Navigation / menu bar-->
+        <nav>
+          <a href="main.html"
+            ><img src="../static/images/Logo-dark.png" alt="CRYPTO-URECA logo"
+          /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="main.html">MAIN</a></li>
+              <li><a href="search.html">SEARCH</a></li>
+              <li><a href="predict.html">PREDICT</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+  
+        <!-- text box -->
+        <div class="search-wrapper">
+          <div class="search-text-box">
+            <h1>
+              Cardano
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- JavaScript to open and close menu bar -------------------->
+      <script>
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+
+<section id="one" class="intro">
+  <h1><b>Prediction of Cardano prices</b></h1>
+  <table id="cardano">
+  </table>
+
+  <div id="graphContainer">
+    <canvas id="lineGraph"></canvas>
+  </div>
+</section>
+
+<script src="../static/js/ada.js"></script>
+
+        
+      
+
+
+    <!---------------------------------------- FOOTER ------------------------------------>
+    <section id="six" class="footer">
+      <h3><b>CONNECT WITH US</b></h3>
+      <div class="footer-row">
+        <div class="footer-column">
+          <div class="footer-name">
+            <h4><b>DEREK THEIN THAN ZAW</b></h4>
+            <p>Mobile: +65 6543 8459<br/>
+              Email: derekdewreck@gmail.com
+              </p>
+          </div>
+
+          <div class="icons">
+            <a href="https://www.facebook.com/mldaateee"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/mlda_at_eee_ntu/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/thein-than-zaw/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-name">
+            <h4><b>PHAM THUY LINH</b></h4>
+            <p>Mobile: +65 9104 4945<br/>
+              Email: ptlinh1803@gmail.com
+              </p>
+          </div>
+
+          <div class="icons">
+            <a href="https://www.facebook.com/linhpham.183/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/linhpham.183/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/thuy-linh-pham-1066a2225/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <hr noshade>
+
+      <a href="home.html"><img src="../static/images/Logo-light.png" alt="CRYPTO-URECA logo"/></a>
+
+      
+      <p>Copyright &copy; 2023. Made with <i class="fa fa-heart-o"></i> in Singapore</p>
+    </section>
+  </body>
